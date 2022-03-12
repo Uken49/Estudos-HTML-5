@@ -1,2 +1,2 @@
 # Estudos-HTML-5
-Curso de HTML 5 feito no RLSystem.
+Curso sobre as ferramentas do HTML 5 feito na RLSystem.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocalização</title>
+</head>
+
+<body>
+    <form>
+        <!-- Essa funcionalidade só funciona se o arquivo estiver em um site hospedado -->
+        Latitude: <input type="text" id="latitude"> <br>
+        Longitude <input type="text" id="longitude"> <br>
+        <input type="button" value="Exibir">
+    </form>
+</body>
+
+<script>
+    function getLocation() {
+        // Verifica se o usuário permite o rastreio do local.
+        if (navigator.geolocation) {
+            // Pega a geolocalização e envia pra função getPosition
+            navigator.geolocation.getCurrentPosition(getPosition)
+        } else {
+            alert("Geolocalização não suportada")
+        }
+    }
+    function getPosition(posicao) {
+        latitude.value = posicao.coords.latitude
+        longitude.value = posicao.coords.longitude
+    }
+</script>
+
+</html>

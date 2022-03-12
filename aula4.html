@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>localStorage e sessionStorage</title>
+</head>
+
+<body onload="exibir()">
+    <!-- localStorage: Grava um dado no computador, mesmo se desligar.
+         sessionStorage: Grava um dado que desaparece ao fechar a aba/guia do navegador.
+    -->
+    <form>
+        Nome: <input id="nome" type="text"> <br>
+        <input type="button" value="Salvar" onclick="salvar()">
+    </form>
+</body>
+
+<script>
+    function salvar() {
+        // Parametros (nome dá váriavel do localstorage, valor)
+        sessionStorage.setItem("l_nome", nome.value)
+    }
+    function exibir() {
+        nome.value = sessionStorage.getItem("l_nome")
+    }
+</script>
+
+</html>

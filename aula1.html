@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Áudio e Vídeo</title>
+</head>
+
+<body>
+    <!-- A tag audio, como sugere, permite a adição de um player de aúdio no site.
+        controls="controls" (ou só controls) usa o controlador do navegador.-->
+
+    <!-- Existem duas maneiras de colocar aúdio -->
+    <!-- <audio src="música.extensão" controls="controls"></audio> -->
+    
+    <!-- Se a extensão do primeiro aúdio não for compatível do navegador, ele vai tentar usar o aúdio de baixo.
+        Ele nunca roda os dois ao mesmo tempo  -->
+    <audio controls autoplay>
+        <source src="música.mp3">
+        <source src="música.webm">
+    </audio>
+    <br>
+    <!-- Mesma coisa do aúdio, apenas colocando o tamanho da tela -->
+    <video src="vídeo.webm" controls="controls" width="500"></video>
+</body>

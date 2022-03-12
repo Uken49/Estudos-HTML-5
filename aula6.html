@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebkitNotification</title>
+</head>
+
+<body>
+    <!-- Essa funcionalidade só funciona se o arquivo estiver em um site hospedado -->
+    <input type="button" value="Exibir">
+</body>
+
+<script>
+    function getNotifications() {
+        // Verifica se o usuário permite que o site envie notificação.
+        if (window.webkitNotification.checkPermission() == 0) {
+            exibirNotificacao()
+        } else{
+            // Pede para o usuário que permita o envio de notificações.
+            window.webkitNotification.requestPermission()
+        }
+        function exibirNotificacao() {
+            // Envia a notificação, 3 parametros: imagem, título e texto/conteúdo.
+            var n = window.webkitNotification.createNotification("logo.jpg", "Novo E-mail", "Olá, tudo bem?")
+        }
+    }
+</script>
+
+</html>
