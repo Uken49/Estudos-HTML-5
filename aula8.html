@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica no HTML 5</title>
+</head>
+<style>
+    #topo{
+        width: 800px;
+        height: 200px;
+        background-color: #c0c0c0;
+    }
+    #conteudo{
+        width: 800px;
+        height: 400px;
+        background-color: #6495ed;
+    }
+    #rodape{
+        width: 800px;
+        height: 20px;
+        background-color: #c0c0c0;
+    }
+
+    
+</style>
+<body>
+    <!-- Semântica serve para melhorar o entendimento do código para os programadores e para robôs de pesquisas -->
+
+    <!-- <div id="topo">
+        <h1> RL SYSTEM Cursos Online</h1>
+    </div>
+
+    <div id="menu">
+        <a href="">Home</a>
+        <a href="">Cadastro</a>
+        <a href="">Login</a>
+        <a href="">Sobre Nós</a>
+    </div>
+
+    <div id="conteudo">
+        Conteudo....
+    </div>
+
+    <div id="rodape">
+        Todos os direitos reservados
+    </div> -->
+    <header id="topo">
+        <!-- Tag para cabeçalho do site -->
+        <h1> RL SYSTEM Cursos Online</h1>
+    </header>
+
+    <nav id="menu">
+        <!-- Tag para navegação entre links -->
+        <a href="">Home</a>
+        <a href="">Cadastro</a>
+        <a href="">Login</a>
+        <a href="">Sobre Nós</a>
+    </nav>
+
+    <article id="conteudo"> <!-- Tag para agrupar o contéudo especifico da página  -->
+        <hgroup> <!-- Tag para agupar mais de uma tag de titulo (seguida) -->
+            <h1>Cursos de HTML 5 Online</h1>
+            <h2>Veja mais informações do curso HTML 5</h2>
+        </hgroup>
+        <p>Este curso é online e você ira aprender a utilizar o html</p>
+
+        <section>
+            <!-- Tag para definir uma sessão (parte) do conteúdo do site -->
+            <h3>Como Assistr os Cursos</h3>
+            <p>Para assistir aos cursos clique aqui</p>
+        </section>
+
+        <section>
+            <h3>Os cursos são válidos no Brasil todo</h3>
+            <p>Sim os cursos são válidos</p>
+        </section>
+    </article>
+    
+    <footer id="rodape">
+        <!-- Tag para o o rodape do site -->
+        Todos os direitos reservados
+    </footer>
+</body>
+</html>
